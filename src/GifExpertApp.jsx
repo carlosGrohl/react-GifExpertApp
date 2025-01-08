@@ -6,7 +6,6 @@ export const GifExpertApp = () => {
   
     const [categories, setCategories] = useState([]);
   
-  
     const onAddCategorie = (newCategory) =>{
         if (categories.includes(newCategory)) return; //valida si el campo ya existe
         setCategories ( [newCategory, ...categories] );
@@ -20,7 +19,6 @@ export const GifExpertApp = () => {
         setCategories([...categories.sort()]);
         console.log (categories);
     }
-
 
     const onClearCategories = () => {
         setCategories([]);
